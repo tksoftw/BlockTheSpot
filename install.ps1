@@ -32,8 +32,6 @@ if (Get-AppxPackage -Name SpotifyAB.SpotifyMusic) {
   Write-Host @'
 The Microsoft Store version of Spotify has been detected which is not supported.
 '@`n
-  $ch = Read-Host -Prompt "Uninstall Spotify Windows Store edition (Y/N) "
-  if ($ch -eq 'y'){
      Write-Host @'
 Uninstalling Spotify.
 '@`n
