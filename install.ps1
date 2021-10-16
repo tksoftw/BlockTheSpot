@@ -167,7 +167,7 @@ UI isn't changed.
 }
 #>
 
-$ch = Read-Host -Prompt "Optional - Remove ad placeholder and upgrade button. Press 'N' if using Spicetify (Y/N) "
+$ch = "y"
 if ($ch -eq 'y') {
     Add-Type -Assembly 'System.IO.Compression.FileSystem'
 
