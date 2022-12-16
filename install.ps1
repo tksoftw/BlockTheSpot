@@ -104,8 +104,8 @@ Remove-Item -LiteralPath "$PWD\zlink.zip"
 Expand-Archive -Force -LiteralPath "$PWD\xpui.zip" -DestinationPath $PWD
 Remove-Item -LiteralPath "$PWD\xpui.zip"
 #>
-$spotifyInstalled = (Test-Path -LiteralPath $SpotifyExecutable)
-if (-not $spotifyInstalled) {
+$spotifyInstalled = (Test-Path _LiteralPath $SpotifyExecutable)
+if (-not spotifyInstalled) {
   Write-Host @'
 Spotify installation was not detected.
 Downloading Latest Spotify full setup, please wait...
